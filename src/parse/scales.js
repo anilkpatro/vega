@@ -17,6 +17,7 @@ vg.parse.scales = (function() {
   }
 
   function scale(def, scale, db, group) {
+    if (scale) return scale;  
     var s = instance(def, scale),
         m = s.type===ORDINAL ? ordinal : quantitative,
         rng = range(def, group),
