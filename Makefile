@@ -28,7 +28,9 @@ vega.js: \
 	src/data/_package.js \
 	src/data/load.js \
 	src/data/read.js \
+	src/data/aggregate.js \
 	src/data/array.js \
+	src/data/bin.js \
 	src/data/copy.js \
 	src/data/cross.js \
 	src/data/facet.js \
@@ -51,8 +53,14 @@ vega.js: \
 	src/data/window.js \
 	src/data/wordcloud.js \
 	src/data/zip.js \
+	src/expression/_package.js \
+	src/expression/constants.js \
+	src/expression/functions.js \
+	src/expression/codegen.js \
+	src/expression/parser.js \
 	src/parse/_package.js \
 	src/parse/axes.js \
+	src/parse/background.js \
 	src/parse/data.js \
 	src/parse/dataflow.js \
 	src/parse/expr.js \
@@ -63,6 +71,7 @@ vega.js: \
 	src/parse/properties.js \
 	src/parse/scales.js \
 	src/parse/spec.js \
+	src/parse/template.js \
 	src/parse/transform.js \
 	src/scene/_package.js \
 	src/scene/Item.js \
@@ -77,6 +86,7 @@ vega.js: \
 	src/core/View.js \
 	src/core/Spec.js \
 	src/headless/_package.js \
+	src/headless/svg.js \
 	src/headless/View.js \
 	src/headless/render.js \
 	src/core/_end.js
@@ -86,6 +96,7 @@ vega.js: \
 	$(JS_COMPILER) < $< > $@
 
 vega.js: Makefile
+	-@chmod 666 $@ # In Vagrant with Windows as host, can't delete otherwise
 	@rm -f $@
 	cat $(filter %.js,$^) > $@
 	@chmod a-w $@

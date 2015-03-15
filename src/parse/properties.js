@@ -24,6 +24,13 @@ vg.parse.properties = (function() {
         code += "\n  o.x = o.x2;"
       }
     }
+    if (vars.xc) {
+      if (vars.width) {
+        code += "\n  o.x = (o.xc - o.width/2);";
+      } else {
+        code += "\n  o.x = o.xc;"
+      }
+    }
 
     if (vars.y2) {
       if (vars.y) {
@@ -34,6 +41,13 @@ vg.parse.properties = (function() {
         code += "\n  o.y = (o.y2 - o.height);";
       } else {
         code += "\n  o.y = o.y2;"
+      }
+    }
+    if (vars.yc) {
+      if (vars.height) {
+        code += "\n  o.y = (o.yc - o.height/2);";
+      } else {
+        code += "\n  o.y = o.yc;"
       }
     }
     
@@ -79,6 +93,10 @@ vg.parse.properties = (function() {
       }
     }
 
+    if (ref.template) {
+      return vg.parse.template.source(ref.template, "item.datum");
+    }
+
     // initialize value
     var val = "item.datum.data";
     if (ref.value !== undefined) {
@@ -120,7 +138,10 @@ vg.parse.properties = (function() {
     }
     
     // multiply, offset, return value
-    val = "(" + (ref.mult?(vg.number(ref.mult)+" * "):"") + val + ")"
+    val = "("
+      + (ref.mult != null ? (vg.number(ref.mult) + " * ") : "")
+      + val
+      + ")"
       + (ref.offset ? " + " + vg.number(ref.offset) : "");
     return val;
   }

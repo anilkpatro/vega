@@ -1,0 +1,1057 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Volumes/EXT/Documents/Github/vega',
+5 verbose install   [ 'd3',
+5 verbose install     'd3-geo-projection',
+5 verbose install     'canvas',
+5 verbose install     'topojson',
+5 verbose install     'yargs',
+5 verbose install     'request',
+5 verbose install     'uglify-js',
+5 verbose install     'vows' ] ]
+6 info preinstall vega@1.5.0
+7 warn package.json vows@0.7.0 No repository field.
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'yargs@^2.3.0', null ]
+10 verbose cache add name=undefined spec="yargs@^2.3.0" args=["yargs@^2.3.0",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'yargs@^2.3.0',
+11 verbose parsed url   path: 'yargs@^2.3.0',
+11 verbose parsed url   href: 'yargs@^2.3.0' }
+12 verbose cache add [ 'request@2.53.0', null ]
+13 verbose cache add name=undefined spec="request@2.53.0" args=["request@2.53.0",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'request@2.53.0',
+14 verbose parsed url   path: 'request@2.53.0',
+14 verbose parsed url   href: 'request@2.53.0' }
+15 verbose cache add [ 'uglify-js@^2.4.16', null ]
+16 verbose cache add name=undefined spec="uglify-js@^2.4.16" args=["uglify-js@^2.4.16",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'uglify-js@^2.4.16',
+17 verbose parsed url   path: 'uglify-js@^2.4.16',
+17 verbose parsed url   href: 'uglify-js@^2.4.16' }
+18 verbose cache add name="yargs" spec="^2.3.0" args=["yargs","^2.3.0"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '^2.3.0',
+19 verbose parsed url   path: '^2.3.0',
+19 verbose parsed url   href: '^2.3.0' }
+20 verbose addNamed [ 'yargs', '^2.3.0' ]
+21 verbose addNamed [ null, '>=2.3.0-0 <3.0.0-0' ]
+22 verbose cache add name="request" spec="2.53.0" args=["request","2.53.0"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '2.53.0',
+23 verbose parsed url   path: '2.53.0',
+23 verbose parsed url   href: '2.53.0' }
+24 verbose addNamed [ 'request', '2.53.0' ]
+25 verbose addNamed [ '2.53.0', '2.53.0' ]
+26 verbose cache add [ 'vows@^0.8.1', null ]
+27 verbose cache add name=undefined spec="vows@^0.8.1" args=["vows@^0.8.1",null]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: 'vows@^0.8.1',
+28 verbose parsed url   path: 'vows@^0.8.1',
+28 verbose parsed url   href: 'vows@^0.8.1' }
+29 verbose cache add name="uglify-js" spec="^2.4.16" args=["uglify-js","^2.4.16"]
+30 verbose parsed url { protocol: null,
+30 verbose parsed url   slashes: null,
+30 verbose parsed url   auth: null,
+30 verbose parsed url   host: null,
+30 verbose parsed url   port: null,
+30 verbose parsed url   hostname: null,
+30 verbose parsed url   hash: null,
+30 verbose parsed url   search: null,
+30 verbose parsed url   query: null,
+30 verbose parsed url   pathname: '^2.4.16',
+30 verbose parsed url   path: '^2.4.16',
+30 verbose parsed url   href: '^2.4.16' }
+31 verbose addNamed [ 'uglify-js', '^2.4.16' ]
+32 verbose addNamed [ null, '>=2.4.16-0 <3.0.0-0' ]
+33 silly lockFile 09b086b2-yargs-2-3-0 yargs@^2.3.0
+34 verbose lock yargs@^2.3.0 /Users/anil/.npm/09b086b2-yargs-2-3-0.lock
+35 silly lockFile aee8052e-request-2-53-0 request@2.53.0
+36 verbose lock request@2.53.0 /Users/anil/.npm/aee8052e-request-2-53-0.lock
+37 silly lockFile b2639de5-uglify-js-2-4-16 uglify-js@^2.4.16
+38 verbose lock uglify-js@^2.4.16 /Users/anil/.npm/b2639de5-uglify-js-2-4-16.lock
+39 verbose cache add name="vows" spec="^0.8.1" args=["vows","^0.8.1"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: '^0.8.1',
+40 verbose parsed url   path: '^0.8.1',
+40 verbose parsed url   href: '^0.8.1' }
+41 verbose addNamed [ 'vows', '^0.8.1' ]
+42 verbose addNamed [ null, '>=0.8.1-0 <0.9.0-0' ]
+43 silly lockFile 2ff51747-vows-0-8-1 vows@^0.8.1
+44 verbose lock vows@^0.8.1 /Users/anil/.npm/2ff51747-vows-0-8-1.lock
+45 verbose cache add [ 'd3@^3.5.5', null ]
+46 verbose cache add name=undefined spec="d3@^3.5.5" args=["d3@^3.5.5",null]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: 'd3@^3.5.5',
+47 verbose parsed url   path: 'd3@^3.5.5',
+47 verbose parsed url   href: 'd3@^3.5.5' }
+48 verbose cache add [ 'd3-geo-projection@^0.2.13', null ]
+49 verbose cache add name=undefined spec="d3-geo-projection@^0.2.13" args=["d3-geo-projection@^0.2.13",null]
+50 verbose parsed url { protocol: null,
+50 verbose parsed url   slashes: null,
+50 verbose parsed url   auth: null,
+50 verbose parsed url   host: null,
+50 verbose parsed url   port: null,
+50 verbose parsed url   hostname: null,
+50 verbose parsed url   hash: null,
+50 verbose parsed url   search: null,
+50 verbose parsed url   query: null,
+50 verbose parsed url   pathname: 'd3-geo-projection@^0.2.13',
+50 verbose parsed url   path: 'd3-geo-projection@^0.2.13',
+50 verbose parsed url   href: 'd3-geo-projection@^0.2.13' }
+51 verbose cache add [ 'canvas@~1.1.6', null ]
+52 verbose cache add name=undefined spec="canvas@~1.1.6" args=["canvas@~1.1.6",null]
+53 verbose parsed url { protocol: null,
+53 verbose parsed url   slashes: null,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: null,
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: null,
+53 verbose parsed url   hash: null,
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: 'canvas@~1.1.6',
+53 verbose parsed url   path: 'canvas@~1.1.6',
+53 verbose parsed url   href: 'canvas@~1.1.6' }
+54 verbose cache add [ 'topojson@^1.6.18', null ]
+55 verbose cache add name=undefined spec="topojson@^1.6.18" args=["topojson@^1.6.18",null]
+56 verbose parsed url { protocol: null,
+56 verbose parsed url   slashes: null,
+56 verbose parsed url   auth: null,
+56 verbose parsed url   host: null,
+56 verbose parsed url   port: null,
+56 verbose parsed url   hostname: null,
+56 verbose parsed url   hash: null,
+56 verbose parsed url   search: null,
+56 verbose parsed url   query: null,
+56 verbose parsed url   pathname: 'topojson@^1.6.18',
+56 verbose parsed url   path: 'topojson@^1.6.18',
+56 verbose parsed url   href: 'topojson@^1.6.18' }
+57 verbose cache add name="d3" spec="^3.5.5" args=["d3","^3.5.5"]
+58 verbose parsed url { protocol: null,
+58 verbose parsed url   slashes: null,
+58 verbose parsed url   auth: null,
+58 verbose parsed url   host: null,
+58 verbose parsed url   port: null,
+58 verbose parsed url   hostname: null,
+58 verbose parsed url   hash: null,
+58 verbose parsed url   search: null,
+58 verbose parsed url   query: null,
+58 verbose parsed url   pathname: '^3.5.5',
+58 verbose parsed url   path: '^3.5.5',
+58 verbose parsed url   href: '^3.5.5' }
+59 verbose addNamed [ 'd3', '^3.5.5' ]
+60 verbose addNamed [ null, '>=3.5.5-0 <4.0.0-0' ]
+61 silly lockFile dd5ad295-d3-3-5-5 d3@^3.5.5
+62 verbose lock d3@^3.5.5 /Users/anil/.npm/dd5ad295-d3-3-5-5.lock
+63 verbose cache add name="d3-geo-projection" spec="^0.2.13" args=["d3-geo-projection","^0.2.13"]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: '^0.2.13',
+64 verbose parsed url   path: '^0.2.13',
+64 verbose parsed url   href: '^0.2.13' }
+65 verbose addNamed [ 'd3-geo-projection', '^0.2.13' ]
+66 verbose addNamed [ null, '>=0.2.13-0 <0.3.0-0' ]
+67 silly lockFile ae1e7592-d3-geo-projection-0-2-13 d3-geo-projection@^0.2.13
+68 verbose lock d3-geo-projection@^0.2.13 /Users/anil/.npm/ae1e7592-d3-geo-projection-0-2-13.lock
+69 verbose cache add name="canvas" spec="~1.1.6" args=["canvas","~1.1.6"]
+70 verbose parsed url { protocol: null,
+70 verbose parsed url   slashes: null,
+70 verbose parsed url   auth: null,
+70 verbose parsed url   host: null,
+70 verbose parsed url   port: null,
+70 verbose parsed url   hostname: null,
+70 verbose parsed url   hash: null,
+70 verbose parsed url   search: null,
+70 verbose parsed url   query: null,
+70 verbose parsed url   pathname: '~1.1.6',
+70 verbose parsed url   path: '~1.1.6',
+70 verbose parsed url   href: '~1.1.6' }
+71 verbose addNamed [ 'canvas', '~1.1.6' ]
+72 verbose addNamed [ null, '>=1.1.6-0 <1.2.0-0' ]
+73 silly lockFile 327e4225-canvas-1-1-6 canvas@~1.1.6
+74 verbose lock canvas@~1.1.6 /Users/anil/.npm/327e4225-canvas-1-1-6.lock
+75 verbose cache add name="topojson" spec="^1.6.18" args=["topojson","^1.6.18"]
+76 verbose parsed url { protocol: null,
+76 verbose parsed url   slashes: null,
+76 verbose parsed url   auth: null,
+76 verbose parsed url   host: null,
+76 verbose parsed url   port: null,
+76 verbose parsed url   hostname: null,
+76 verbose parsed url   hash: null,
+76 verbose parsed url   search: null,
+76 verbose parsed url   query: null,
+76 verbose parsed url   pathname: '^1.6.18',
+76 verbose parsed url   path: '^1.6.18',
+76 verbose parsed url   href: '^1.6.18' }
+77 verbose addNamed [ 'topojson', '^1.6.18' ]
+78 verbose addNamed [ null, '>=1.6.18-0 <2.0.0-0' ]
+79 silly lockFile 083adde4-topojson-1-6-18 topojson@^1.6.18
+80 verbose lock topojson@^1.6.18 /Users/anil/.npm/083adde4-topojson-1-6-18.lock
+81 silly addNameRange { name: 'yargs', range: '>=2.3.0-0 <3.0.0-0', hasData: false }
+82 silly addNameRange { name: 'uglify-js',
+82 silly addNameRange   range: '>=2.4.16-0 <3.0.0-0',
+82 silly addNameRange   hasData: false }
+83 silly addNameRange { name: 'vows', range: '>=0.8.1-0 <0.9.0-0', hasData: false }
+84 silly addNameRange { name: 'd3', range: '>=3.5.5-0 <4.0.0-0', hasData: false }
+85 silly addNameRange { name: 'd3-geo-projection',
+85 silly addNameRange   range: '>=0.2.13-0 <0.3.0-0',
+85 silly addNameRange   hasData: false }
+86 verbose request where is /yargs
+87 verbose request registry https://registry.npmjs.org/
+88 verbose request id 5bd6c56ce84b3068
+89 verbose url raw /yargs
+90 verbose url resolving [ 'https://registry.npmjs.org/', './yargs' ]
+91 verbose url resolved https://registry.npmjs.org/yargs
+92 verbose request where is https://registry.npmjs.org/yargs
+93 info trying registry request attempt 1 at 16:56:24
+94 http GET https://registry.npmjs.org/yargs
+95 silly addNameRange { name: 'topojson',
+95 silly addNameRange   range: '>=1.6.18-0 <2.0.0-0',
+95 silly addNameRange   hasData: false }
+96 silly addNameRange { name: 'canvas', range: '>=1.1.6-0 <1.2.0-0', hasData: false }
+97 verbose request where is /uglify-js
+98 verbose request registry https://registry.npmjs.org/
+99 verbose url raw /uglify-js
+100 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+101 verbose url resolved https://registry.npmjs.org/uglify-js
+102 verbose request where is https://registry.npmjs.org/uglify-js
+103 info trying registry request attempt 1 at 16:56:24
+104 verbose etag "1SVFS0XD3QLDF5REP9RXAOCZA"
+105 http GET https://registry.npmjs.org/uglify-js
+106 verbose request where is /vows
+107 verbose request registry https://registry.npmjs.org/
+108 verbose url raw /vows
+109 verbose url resolving [ 'https://registry.npmjs.org/', './vows' ]
+110 verbose url resolved https://registry.npmjs.org/vows
+111 verbose request where is https://registry.npmjs.org/vows
+112 info trying registry request attempt 1 at 16:56:24
+113 verbose etag "B7TOT4F33BUMDALS58Z3Q5FFB"
+114 http GET https://registry.npmjs.org/vows
+115 verbose request where is /d3-geo-projection
+116 verbose request registry https://registry.npmjs.org/
+117 verbose url raw /d3-geo-projection
+118 verbose url resolving [ 'https://registry.npmjs.org/', './d3-geo-projection' ]
+119 verbose url resolved https://registry.npmjs.org/d3-geo-projection
+120 verbose request where is https://registry.npmjs.org/d3-geo-projection
+121 info trying registry request attempt 1 at 16:56:24
+122 verbose etag "7858U8N2NLH8P0GAX3WHZ4BKW"
+123 http GET https://registry.npmjs.org/d3-geo-projection
+124 verbose request where is /d3
+125 verbose request registry https://registry.npmjs.org/
+126 verbose url raw /d3
+127 verbose url resolving [ 'https://registry.npmjs.org/', './d3' ]
+128 verbose url resolved https://registry.npmjs.org/d3
+129 verbose request where is https://registry.npmjs.org/d3
+130 info trying registry request attempt 1 at 16:56:24
+131 verbose etag "CFY7471H76VELPFZ5OZ1Y0L9F"
+132 http GET https://registry.npmjs.org/d3
+133 verbose request where is /canvas
+134 verbose request registry https://registry.npmjs.org/
+135 verbose url raw /canvas
+136 verbose url resolving [ 'https://registry.npmjs.org/', './canvas' ]
+137 verbose url resolved https://registry.npmjs.org/canvas
+138 verbose request where is https://registry.npmjs.org/canvas
+139 info trying registry request attempt 1 at 16:56:24
+140 verbose etag "5CU8O0HVRTIXOOV4MLT3ICTZ5"
+141 http GET https://registry.npmjs.org/canvas
+142 verbose request where is /topojson
+143 verbose request registry https://registry.npmjs.org/
+144 verbose url raw /topojson
+145 verbose url resolving [ 'https://registry.npmjs.org/', './topojson' ]
+146 verbose url resolved https://registry.npmjs.org/topojson
+147 verbose request where is https://registry.npmjs.org/topojson
+148 info trying registry request attempt 1 at 16:56:24
+149 verbose etag "6IISF42ANVV65UM1ISK48N7CV"
+150 http GET https://registry.npmjs.org/topojson
+151 verbose request where is /request
+152 verbose request registry https://registry.npmjs.org/
+153 verbose url raw /request
+154 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+155 verbose url resolved https://registry.npmjs.org/request
+156 verbose request where is https://registry.npmjs.org/request
+157 info trying registry request attempt 1 at 16:56:24
+158 verbose etag "D7JE3A5K703E5CEP79HJ9ACSM"
+159 http GET https://registry.npmjs.org/request
+160 http 200 https://registry.npmjs.org/uglify-js
+161 silly registry.get cb [ 200,
+161 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+161 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+161 silly registry.get     etag: '"G8JQNXNIQEOU3SAF2SDSCS14"',
+161 silly registry.get     'content-type': 'application/json',
+161 silly registry.get     'cache-control': 'max-age=60',
+161 silly registry.get     'content-length': '86624',
+161 silly registry.get     'accept-ranges': 'bytes',
+161 silly registry.get     via: '1.1 varnish',
+161 silly registry.get     age: '14',
+161 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+161 silly registry.get     'x-cache': 'HIT',
+161 silly registry.get     'x-cache-hits': '27',
+161 silly registry.get     'x-timer': 'S1426366584.456760,VS0,VE0',
+161 silly registry.get     vary: 'Accept',
+161 silly registry.get     'keep-alive': 'timeout=10, max=50',
+161 silly registry.get     connection: 'Keep-Alive' } ]
+162 http 200 https://registry.npmjs.org/yargs
+163 silly registry.get cb [ 200,
+163 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+163 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+163 silly registry.get     etag: '"EN5W3PF3W3KHCU7LKDOOVZT8W"',
+163 silly registry.get     'content-type': 'application/json',
+163 silly registry.get     'cache-control': 'max-age=60',
+163 silly registry.get     'content-length': '91890',
+163 silly registry.get     'accept-ranges': 'bytes',
+163 silly registry.get     via: '1.1 varnish',
+163 silly registry.get     age: '49',
+163 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+163 silly registry.get     'x-cache': 'HIT',
+163 silly registry.get     'x-cache-hits': '3',
+163 silly registry.get     'x-timer': 'S1426366584.464583,VS0,VE0',
+163 silly registry.get     vary: 'Accept',
+163 silly registry.get     'keep-alive': 'timeout=10, max=50',
+163 silly registry.get     connection: 'Keep-Alive' } ]
+164 http 200 https://registry.npmjs.org/d3
+165 silly registry.get cb [ 200,
+165 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+165 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+165 silly registry.get     etag: '"7W5A2XMFCM5FK8NVZIVTMSXAY"',
+165 silly registry.get     'content-type': 'application/json',
+165 silly registry.get     'cache-control': 'max-age=60',
+165 silly registry.get     'content-length': '107557',
+165 silly registry.get     'accept-ranges': 'bytes',
+165 silly registry.get     via: '1.1 varnish',
+165 silly registry.get     age: '0',
+165 silly registry.get     'x-served-by': 'cache-jfk1031-JFK',
+165 silly registry.get     'x-cache': 'HIT',
+165 silly registry.get     'x-cache-hits': '1',
+165 silly registry.get     'x-timer': 'S1426366584.458589,VS0,VE14',
+165 silly registry.get     vary: 'Accept',
+165 silly registry.get     'keep-alive': 'timeout=10, max=50',
+165 silly registry.get     connection: 'Keep-Alive' } ]
+166 silly addNameRange number 2 { name: 'uglify-js',
+166 silly addNameRange   range: '>=2.4.16-0 <3.0.0-0',
+166 silly addNameRange   hasData: true }
+167 silly addNameRange versions [ 'uglify-js',
+167 silly addNameRange   [ '0.0.1',
+167 silly addNameRange     '0.0.2',
+167 silly addNameRange     '0.0.3',
+167 silly addNameRange     '0.0.4',
+167 silly addNameRange     '0.0.5',
+167 silly addNameRange     '1.0.1',
+167 silly addNameRange     '1.0.2',
+167 silly addNameRange     '1.0.3',
+167 silly addNameRange     '1.0.4',
+167 silly addNameRange     '1.0.5',
+167 silly addNameRange     '1.0.6',
+167 silly addNameRange     '1.0.7',
+167 silly addNameRange     '1.1.0',
+167 silly addNameRange     '1.1.1',
+167 silly addNameRange     '1.2.0',
+167 silly addNameRange     '1.2.1',
+167 silly addNameRange     '1.2.2',
+167 silly addNameRange     '1.2.3',
+167 silly addNameRange     '1.2.4',
+167 silly addNameRange     '1.2.5',
+167 silly addNameRange     '1.2.6',
+167 silly addNameRange     '1.3.0',
+167 silly addNameRange     '1.3.1',
+167 silly addNameRange     '1.3.2',
+167 silly addNameRange     '1.3.3',
+167 silly addNameRange     '1.3.4',
+167 silly addNameRange     '2.2.0',
+167 silly addNameRange     '2.2.1',
+167 silly addNameRange     '2.2.2',
+167 silly addNameRange     '2.2.3',
+167 silly addNameRange     '2.2.4',
+167 silly addNameRange     '2.2.5',
+167 silly addNameRange     '2.3.0',
+167 silly addNameRange     '2.3.1',
+167 silly addNameRange     '2.3.2',
+167 silly addNameRange     '2.3.3',
+167 silly addNameRange     '2.3.4',
+167 silly addNameRange     '2.3.5',
+167 silly addNameRange     '2.3.6',
+167 silly addNameRange     '1.3.5',
+167 silly addNameRange     '2.4.0',
+167 silly addNameRange     '2.4.1',
+167 silly addNameRange     '2.4.2',
+167 silly addNameRange     '2.4.3',
+167 silly addNameRange     '2.4.4',
+167 silly addNameRange     '2.4.5',
+167 silly addNameRange     '2.4.6',
+167 silly addNameRange     '2.4.7',
+167 silly addNameRange     '2.4.8',
+167 silly addNameRange     '2.4.9',
+167 silly addNameRange     '2.4.10',
+167 silly addNameRange     '2.4.11',
+167 silly addNameRange     '2.4.12',
+167 silly addNameRange     '2.4.13',
+167 silly addNameRange     '2.4.14',
+167 silly addNameRange     '2.4.15',
+167 silly addNameRange     '2.4.16',
+167 silly addNameRange     '2.4.17' ] ]
+168 verbose addNamed [ 'uglify-js', '2.4.17' ]
+169 verbose addNamed [ '2.4.17', '2.4.17' ]
+170 silly lockFile 7ff2ae2d-uglify-js-2-4-17 uglify-js@2.4.17
+171 verbose lock uglify-js@2.4.17 /Users/anil/.npm/7ff2ae2d-uglify-js-2-4-17.lock
+172 silly lockFile 76be1774-g-uglify-js-uglify-js-2-4-17-tgz https://registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz
+173 verbose lock https://registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz /Users/anil/.npm/76be1774-g-uglify-js-uglify-js-2-4-17-tgz.lock
+174 silly addNameRange number 2 { name: 'yargs', range: '>=2.3.0-0 <3.0.0-0', hasData: true }
+175 silly addNameRange versions [ 'yargs',
+175 silly addNameRange   [ '1.0.0',
+175 silly addNameRange     '1.0.1',
+175 silly addNameRange     '1.0.3',
+175 silly addNameRange     '1.0.4',
+175 silly addNameRange     '1.0.5',
+175 silly addNameRange     '1.0.6',
+175 silly addNameRange     '1.0.7',
+175 silly addNameRange     '1.0.8',
+175 silly addNameRange     '1.0.9',
+175 silly addNameRange     '1.0.10',
+175 silly addNameRange     '1.0.11',
+175 silly addNameRange     '1.0.12',
+175 silly addNameRange     '1.0.13',
+175 silly addNameRange     '1.0.15',
+175 silly addNameRange     '1.1.0',
+175 silly addNameRange     '1.1.1',
+175 silly addNameRange     '1.1.2',
+175 silly addNameRange     '1.1.3',
+175 silly addNameRange     '1.2.0',
+175 silly addNameRange     '1.2.1',
+175 silly addNameRange     '1.2.2',
+175 silly addNameRange     '1.2.3',
+175 silly addNameRange     '1.2.4',
+175 silly addNameRange     '1.2.5',
+175 silly addNameRange     '1.2.6',
+175 silly addNameRange     '1.3.0',
+175 silly addNameRange     '1.3.1',
+175 silly addNameRange     '1.3.2',
+175 silly addNameRange     '1.3.3',
+175 silly addNameRange     '2.1.1',
+175 silly addNameRange     '2.3.0',
+175 silly addNameRange     '3.0.0',
+175 silly addNameRange     '3.0.1',
+175 silly addNameRange     '3.0.2',
+175 silly addNameRange     '3.0.3',
+175 silly addNameRange     '3.0.4',
+175 silly addNameRange     '3.1.0',
+175 silly addNameRange     '3.2.1',
+175 silly addNameRange     '3.3.1',
+175 silly addNameRange     '3.4.0',
+175 silly addNameRange     '3.4.4',
+175 silly addNameRange     '3.4.5',
+175 silly addNameRange     '3.5.0',
+175 silly addNameRange     '3.5.1',
+175 silly addNameRange     '3.5.2',
+175 silly addNameRange     '3.5.3',
+175 silly addNameRange     '3.5.4' ] ]
+176 verbose addNamed [ 'yargs', '2.3.0' ]
+177 verbose addNamed [ '2.3.0', '2.3.0' ]
+178 silly lockFile 563e49bf-yargs-2-3-0 yargs@2.3.0
+179 verbose lock yargs@2.3.0 /Users/anil/.npm/563e49bf-yargs-2-3-0.lock
+180 verbose addRemoteTarball [ 'https://registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz',
+180 verbose addRemoteTarball   '01b9b38c828cb62ccfc25bedd1dfabd907c431a1' ]
+181 http 200 https://registry.npmjs.org/request
+182 silly registry.get cb [ 200,
+182 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+182 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+182 silly registry.get     etag: '"BIJFR4VUCUMYVL3PXBYYIII80"',
+182 silly registry.get     'content-type': 'application/json',
+182 silly registry.get     'cache-control': 'max-age=60',
+182 silly registry.get     'content-length': '136969',
+182 silly registry.get     'accept-ranges': 'bytes',
+182 silly registry.get     via: '1.1 varnish',
+182 silly registry.get     age: '16',
+182 silly registry.get     'x-served-by': 'cache-jfk1031-JFK',
+182 silly registry.get     'x-cache': 'HIT',
+182 silly registry.get     'x-cache-hits': '1',
+182 silly registry.get     'x-timer': 'S1426366584.533740,VS0,VE1',
+182 silly registry.get     vary: 'Accept',
+182 silly registry.get     'keep-alive': 'timeout=10, max=49',
+182 silly registry.get     connection: 'Keep-Alive' } ]
+183 silly lockFile 528749f2--npmjs-org-yargs-yargs-2-3-0-tgz https://registry.npmjs.org/yargs/-/yargs-2.3.0.tgz
+184 verbose lock https://registry.npmjs.org/yargs/-/yargs-2.3.0.tgz /Users/anil/.npm/528749f2--npmjs-org-yargs-yargs-2-3-0-tgz.lock
+185 silly addNameRange number 2 { name: 'd3', range: '>=3.5.5-0 <4.0.0-0', hasData: true }
+186 silly addNameRange versions [ 'd3',
+186 silly addNameRange   [ '1.29.5',
+186 silly addNameRange     '2.1.3',
+186 silly addNameRange     '2.2.1',
+186 silly addNameRange     '2.3.0',
+186 silly addNameRange     '2.3.2',
+186 silly addNameRange     '2.3.3',
+186 silly addNameRange     '2.3.4',
+186 silly addNameRange     '2.4.0',
+186 silly addNameRange     '2.4.1',
+186 silly addNameRange     '2.4.2',
+186 silly addNameRange     '2.5.1',
+186 silly addNameRange     '2.5.2',
+186 silly addNameRange     '2.6.0',
+186 silly addNameRange     '2.7.0',
+186 silly addNameRange     '2.7.2',
+186 silly addNameRange     '2.7.3',
+186 silly addNameRange     '2.7.4',
+186 silly addNameRange     '2.7.5',
+186 silly addNameRange     '2.8.0',
+186 silly addNameRange     '2.8.1',
+186 silly addNameRange     '2.9.0',
+186 silly addNameRange     '2.9.1',
+186 silly addNameRange     '2.9.2',
+186 silly addNameRange     '2.9.3',
+186 silly addNameRange     '2.9.4',
+186 silly addNameRange     '2.9.6',
+186 silly addNameRange     '2.9.7',
+186 silly addNameRange     '2.10.0',
+186 silly addNameRange     '2.10.1',
+186 silly addNameRange     '2.10.3',
+186 silly addNameRange     '3.0.0',
+186 silly addNameRange     '3.0.1',
+186 silly addNameRange     '3.0.2',
+186 silly addNameRange     '3.0.3',
+186 silly addNameRange     '3.0.4',
+186 silly addNameRange     '3.0.5',
+186 silly addNameRange     '3.0.6',
+186 silly addNameRange     '3.0.7',
+186 silly addNameRange     '3.0.8',
+186 silly addNameRange     '3.1.0',
+186 silly addNameRange     '3.1.1',
+186 silly addNameRange     '3.1.2',
+186 silly addNameRange     '3.1.3',
+186 silly addNameRange     '3.1.4',
+186 silly addNameRange     '3.1.5',
+186 silly addNameRange     '3.1.6',
+186 silly addNameRange     '3.1.7',
+186 silly addNameRange     '3.1.8',
+186 silly addNameRange     '3.1.9',
+186 silly addNameRange     '3.1.10',
+186 silly addNameRange     '3.2.0',
+186 silly addNameRange     '3.2.1',
+186 silly addNameRange     '3.2.2',
+186 silly addNameRange     '3.2.3',
+186 silly addNameRange     '3.2.4',
+186 silly addNameRange     '3.2.5',
+186 silly addNameRange     '3.2.6',
+186 silly addNameRange     '3.2.7',
+186 silly addNameRange     '3.2.8',
+186 silly addNameRange     '3.3.0',
+186 silly addNameRange     '3.3.1',
+186 silly addNameRange     '3.3.2',
+186 silly addNameRange     '3.3.3',
+186 silly addNameRange     '3.3.4',
+186 silly addNameRange     '3.3.5',
+186 silly addNameRange     '3.3.6',
+186 silly addNameRange     '3.3.7',
+186 silly addNameRange     '3.3.8',
+186 silly addNameRange     '3.3.9',
+186 silly addNameRange     '3.3.10',
+186 silly addNameRange     '3.3.11',
+186 silly addNameRange     '3.3.12',
+186 silly addNameRange     '3.3.13',
+186 silly addNameRange     '3.4.0',
+186 silly addNameRange     '3.4.1',
+186 silly addNameRange     '3.4.2',
+186 silly addNameRange     '3.4.3',
+186 silly addNameRange     '3.4.4',
+186 silly addNameRange     '3.4.5',
+186 silly addNameRange     '3.4.6',
+186 silly addNameRange     '3.4.7',
+186 silly addNameRange     '3.4.8',
+186 silly addNameRange     '3.4.9',
+186 silly addNameRange     '3.4.10',
+186 silly addNameRange     '3.4.11',
+186 silly addNameRange     '3.4.12',
+186 silly addNameRange     '3.4.13',
+186 silly addNameRange     '3.5.0',
+186 silly addNameRange     '3.5.1',
+186 silly addNameRange     '3.5.2',
+186 silly addNameRange     '3.5.3',
+186 silly addNameRange     '3.5.4',
+186 silly addNameRange     '3.5.5' ] ]
+187 verbose addNamed [ 'd3', '3.5.5' ]
+188 verbose addNamed [ '3.5.5', '3.5.5' ]
+189 silly lockFile 4144013f-d3-3-5-5 d3@3.5.5
+190 verbose lock d3@3.5.5 /Users/anil/.npm/4144013f-d3-3-5-5.lock
+191 verbose addRemoteTarball [ 'https://registry.npmjs.org/yargs/-/yargs-2.3.0.tgz',
+191 verbose addRemoteTarball   'e900c87250ec5cd080db6009fe3dd63156f1d7fb' ]
+192 silly lockFile c5011084-gistry-npmjs-org-d3-d3-3-5-5-tgz https://registry.npmjs.org/d3/-/d3-3.5.5.tgz
+193 verbose lock https://registry.npmjs.org/d3/-/d3-3.5.5.tgz /Users/anil/.npm/c5011084-gistry-npmjs-org-d3-d3-3-5-5-tgz.lock
+194 verbose addRemoteTarball [ 'https://registry.npmjs.org/d3/-/d3-3.5.5.tgz',
+194 verbose addRemoteTarball   'be1aba6a84fb6653283b3ebebb7f570e3bda187e' ]
+195 info retry fetch attempt 1 at 16:56:24
+196 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz
+197 silly lockFile ba72365e-s-org-request-request-2-53-0-tgz https://registry.npmjs.org/request/-/request-2.53.0.tgz
+198 verbose lock https://registry.npmjs.org/request/-/request-2.53.0.tgz /Users/anil/.npm/ba72365e-s-org-request-request-2-53-0-tgz.lock
+199 info retry fetch attempt 1 at 16:56:24
+200 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/yargs/-/yargs-2.3.0.tgz
+201 http GET https://registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz
+202 info retry fetch attempt 1 at 16:56:24
+203 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/d3/-/d3-3.5.5.tgz
+204 verbose addRemoteTarball [ 'https://registry.npmjs.org/request/-/request-2.53.0.tgz',
+204 verbose addRemoteTarball   '180a3ae92b7b639802e4f9545dd8fcdeb71d760c' ]
+205 http GET https://registry.npmjs.org/yargs/-/yargs-2.3.0.tgz
+206 http GET https://registry.npmjs.org/d3/-/d3-3.5.5.tgz
+207 info retry fetch attempt 1 at 16:56:24
+208 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/request/-/request-2.53.0.tgz
+209 http GET https://registry.npmjs.org/request/-/request-2.53.0.tgz
+210 http 200 https://registry.npmjs.org/canvas
+211 silly registry.get cb [ 200,
+211 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+211 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+211 silly registry.get     etag: '"B4COK96IJEQR05W3JNC3CJ3EP"',
+211 silly registry.get     'content-type': 'application/json',
+211 silly registry.get     'cache-control': 'max-age=60',
+211 silly registry.get     'content-length': '64620',
+211 silly registry.get     'accept-ranges': 'bytes',
+211 silly registry.get     via: '1.1 varnish',
+211 silly registry.get     age: '0',
+211 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+211 silly registry.get     'x-cache': 'HIT',
+211 silly registry.get     'x-cache-hits': '1',
+211 silly registry.get     'x-timer': 'S1426366584.518562,VS0,VE90',
+211 silly registry.get     vary: 'Accept',
+211 silly registry.get     'keep-alive': 'timeout=10, max=49',
+211 silly registry.get     connection: 'Keep-Alive' } ]
+212 silly addNameRange number 2 { name: 'canvas', range: '>=1.1.6-0 <1.2.0-0', hasData: true }
+213 silly addNameRange versions [ 'canvas',
+213 silly addNameRange   [ '0.0.1',
+213 silly addNameRange     '0.0.2',
+213 silly addNameRange     '0.0.3',
+213 silly addNameRange     '0.0.4',
+213 silly addNameRange     '0.0.5',
+213 silly addNameRange     '0.0.6',
+213 silly addNameRange     '0.0.7',
+213 silly addNameRange     '0.0.8',
+213 silly addNameRange     '0.1.0',
+213 silly addNameRange     '0.2.0',
+213 silly addNameRange     '0.2.1',
+213 silly addNameRange     '0.3.0',
+213 silly addNameRange     '0.3.1',
+213 silly addNameRange     '0.3.2',
+213 silly addNameRange     '0.3.3',
+213 silly addNameRange     '0.4.0',
+213 silly addNameRange     '0.4.1',
+213 silly addNameRange     '0.4.2',
+213 silly addNameRange     '0.4.3',
+213 silly addNameRange     '0.5.0',
+213 silly addNameRange     '0.5.1',
+213 silly addNameRange     '0.5.2',
+213 silly addNameRange     '0.5.3',
+213 silly addNameRange     '0.5.4',
+213 silly addNameRange     '0.6.0',
+213 silly addNameRange     '0.7.0',
+213 silly addNameRange     '0.7.1',
+213 silly addNameRange     '0.7.2',
+213 silly addNameRange     '0.7.3',
+213 silly addNameRange     '0.8.0',
+213 silly addNameRange     '0.8.1',
+213 silly addNameRange     '0.8.2',
+213 silly addNameRange     '0.8.3',
+213 silly addNameRange     '0.9.0',
+213 silly addNameRange     '0.10.0',
+213 silly addNameRange     '0.10.1',
+213 silly addNameRange     '0.10.2',
+213 silly addNameRange     '0.10.3',
+213 silly addNameRange     '0.11.0',
+213 silly addNameRange     '0.11.1',
+213 silly addNameRange     '0.11.2',
+213 silly addNameRange     '0.11.3',
+213 silly addNameRange     '0.12.0',
+213 silly addNameRange     '0.12.1',
+213 silly addNameRange     '0.13.0',
+213 silly addNameRange     '0.13.1',
+213 silly addNameRange     '1.0.0',
+213 silly addNameRange     '1.0.1',
+213 silly addNameRange     '1.0.2',
+213 silly addNameRange     '1.0.3',
+213 silly addNameRange     '1.0.4',
+213 silly addNameRange     '1.1.0',
+213 silly addNameRange     '1.1.1',
+213 silly addNameRange     '1.1.2',
+213 silly addNameRange     '1.1.3',
+213 silly addNameRange     '1.1.4',
+213 silly addNameRange     '1.1.5',
+213 silly addNameRange     '1.1.6',
+213 silly addNameRange     '1.2.0',
+213 silly addNameRange     '1.2.1' ] ]
+214 verbose addNamed [ 'canvas', '1.1.6' ]
+215 verbose addNamed [ '1.1.6', '1.1.6' ]
+216 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+217 verbose lock canvas@1.1.6 /Users/anil/.npm/4f76786f-canvas-1-1-6.lock
+218 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+219 verbose lock https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz /Users/anil/.npm/893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz.lock
+220 verbose addRemoteTarball [ 'https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz',
+220 verbose addRemoteTarball   'd84b088f3bcd3840fe14977cd3625f5fe89f81ee' ]
+221 info retry fetch attempt 1 at 16:56:24
+222 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+223 http GET https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+224 http 200 https://registry.npmjs.org/yargs/-/yargs-2.3.0.tgz
+225 http 200 https://registry.npmjs.org/request/-/request-2.53.0.tgz
+226 http 200 https://registry.npmjs.org/d3/-/d3-3.5.5.tgz
+227 http 200 https://registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz
+228 silly lockFile 528749f2--npmjs-org-yargs-yargs-2-3-0-tgz https://registry.npmjs.org/yargs/-/yargs-2.3.0.tgz
+229 silly lockFile 528749f2--npmjs-org-yargs-yargs-2-3-0-tgz https://registry.npmjs.org/yargs/-/yargs-2.3.0.tgz
+230 silly lockFile 563e49bf-yargs-2-3-0 yargs@2.3.0
+231 silly lockFile 563e49bf-yargs-2-3-0 yargs@2.3.0
+232 silly lockFile 09b086b2-yargs-2-3-0 yargs@^2.3.0
+233 silly lockFile 09b086b2-yargs-2-3-0 yargs@^2.3.0
+234 http 200 https://registry.npmjs.org/d3-geo-projection
+235 silly registry.get cb [ 200,
+235 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+235 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+235 silly registry.get     etag: '"2IGZ1EXQLE4WTUFSD2KXLFA0Y"',
+235 silly registry.get     'content-type': 'application/json',
+235 silly registry.get     'cache-control': 'max-age=60',
+235 silly registry.get     'content-length': '42986',
+235 silly registry.get     'accept-ranges': 'bytes',
+235 silly registry.get     via: '1.1 varnish',
+235 silly registry.get     age: '0',
+235 silly registry.get     'x-served-by': 'cache-jfk1032-JFK',
+235 silly registry.get     'x-cache': 'MISS',
+235 silly registry.get     'x-cache-hits': '0',
+235 silly registry.get     'x-timer': 'S1426366584.459262,VS0,VE182',
+235 silly registry.get     vary: 'Accept',
+235 silly registry.get     'keep-alive': 'timeout=10, max=50',
+235 silly registry.get     connection: 'Keep-Alive' } ]
+236 silly addNameRange number 2 { name: 'd3-geo-projection',
+236 silly addNameRange   range: '>=0.2.13-0 <0.3.0-0',
+236 silly addNameRange   hasData: true }
+237 silly addNameRange versions [ 'd3-geo-projection',
+237 silly addNameRange   [ '0.1.0',
+237 silly addNameRange     '0.2.0',
+237 silly addNameRange     '0.2.1',
+237 silly addNameRange     '0.2.2',
+237 silly addNameRange     '0.2.3',
+237 silly addNameRange     '0.2.4',
+237 silly addNameRange     '0.2.5',
+237 silly addNameRange     '0.2.6',
+237 silly addNameRange     '0.2.7',
+237 silly addNameRange     '0.2.8',
+237 silly addNameRange     '0.2.9',
+237 silly addNameRange     '0.2.10',
+237 silly addNameRange     '0.2.11',
+237 silly addNameRange     '0.2.12',
+237 silly addNameRange     '0.2.13' ] ]
+238 verbose addNamed [ 'd3-geo-projection', '0.2.13' ]
+239 verbose addNamed [ '0.2.13', '0.2.13' ]
+240 silly lockFile 92eaca93-d3-geo-projection-0-2-13 d3-geo-projection@0.2.13
+241 verbose lock d3-geo-projection@0.2.13 /Users/anil/.npm/92eaca93-d3-geo-projection-0-2-13.lock
+242 silly lockFile 65643b1c-ion-d3-geo-projection-0-2-13-tgz https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz
+243 verbose lock https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz /Users/anil/.npm/65643b1c-ion-d3-geo-projection-0-2-13-tgz.lock
+244 verbose addRemoteTarball [ 'https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz',
+244 verbose addRemoteTarball   'c288d85f3cb2a08c1db6cce069217884b58bd663' ]
+245 info retry fetch attempt 1 at 16:56:24
+246 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz
+247 http GET https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz
+248 silly lockFile ba72365e-s-org-request-request-2-53-0-tgz https://registry.npmjs.org/request/-/request-2.53.0.tgz
+249 silly lockFile ba72365e-s-org-request-request-2-53-0-tgz https://registry.npmjs.org/request/-/request-2.53.0.tgz
+250 silly lockFile aee8052e-request-2-53-0 request@2.53.0
+251 silly lockFile aee8052e-request-2-53-0 request@2.53.0
+252 silly lockFile 76be1774-g-uglify-js-uglify-js-2-4-17-tgz https://registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz
+253 silly lockFile 76be1774-g-uglify-js-uglify-js-2-4-17-tgz https://registry.npmjs.org/uglify-js/-/uglify-js-2.4.17.tgz
+254 silly lockFile 7ff2ae2d-uglify-js-2-4-17 uglify-js@2.4.17
+255 silly lockFile 7ff2ae2d-uglify-js-2-4-17 uglify-js@2.4.17
+256 silly lockFile b2639de5-uglify-js-2-4-16 uglify-js@^2.4.16
+257 silly lockFile b2639de5-uglify-js-2-4-16 uglify-js@^2.4.16
+258 http 200 https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+259 silly lockFile c5011084-gistry-npmjs-org-d3-d3-3-5-5-tgz https://registry.npmjs.org/d3/-/d3-3.5.5.tgz
+260 silly lockFile c5011084-gistry-npmjs-org-d3-d3-3-5-5-tgz https://registry.npmjs.org/d3/-/d3-3.5.5.tgz
+261 silly lockFile 4144013f-d3-3-5-5 d3@3.5.5
+262 silly lockFile 4144013f-d3-3-5-5 d3@3.5.5
+263 silly lockFile dd5ad295-d3-3-5-5 d3@^3.5.5
+264 silly lockFile dd5ad295-d3-3-5-5 d3@^3.5.5
+265 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+266 silly lockFile 893c69ff-pmjs-org-canvas-canvas-1-1-6-tgz https://registry.npmjs.org/canvas/-/canvas-1.1.6.tgz
+267 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+268 silly lockFile 4f76786f-canvas-1-1-6 canvas@1.1.6
+269 silly lockFile 327e4225-canvas-1-1-6 canvas@~1.1.6
+270 silly lockFile 327e4225-canvas-1-1-6 canvas@~1.1.6
+271 http 200 https://registry.npmjs.org/vows
+272 silly registry.get cb [ 200,
+272 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+272 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+272 silly registry.get     etag: '"71J91LFO9QA331VFLPDVBLQYU"',
+272 silly registry.get     'content-type': 'application/json',
+272 silly registry.get     'cache-control': 'max-age=60',
+272 silly registry.get     'content-length': '34324',
+272 silly registry.get     'accept-ranges': 'bytes',
+272 silly registry.get     via: '1.1 varnish',
+272 silly registry.get     age: '0',
+272 silly registry.get     'x-served-by': 'cache-jfk1035-JFK',
+272 silly registry.get     'x-cache': 'HIT',
+272 silly registry.get     'x-cache-hits': '1',
+272 silly registry.get     'x-timer': 'S1426366584.460558,VS0,VE359',
+272 silly registry.get     vary: 'Accept',
+272 silly registry.get     'keep-alive': 'timeout=10, max=50',
+272 silly registry.get     connection: 'Keep-Alive' } ]
+273 silly addNameRange number 2 { name: 'vows', range: '>=0.8.1-0 <0.9.0-0', hasData: true }
+274 silly addNameRange versions [ 'vows',
+274 silly addNameRange   [ '0.2.5',
+274 silly addNameRange     '0.3.0',
+274 silly addNameRange     '0.3.1',
+274 silly addNameRange     '0.3.2',
+274 silly addNameRange     '0.3.3',
+274 silly addNameRange     '0.3.4',
+274 silly addNameRange     '0.3.5',
+274 silly addNameRange     '0.4.0',
+274 silly addNameRange     '0.4.1',
+274 silly addNameRange     '0.4.2',
+274 silly addNameRange     '0.4.3',
+274 silly addNameRange     '0.4.4',
+274 silly addNameRange     '0.4.5',
+274 silly addNameRange     '0.4.6',
+274 silly addNameRange     '0.5.0',
+274 silly addNameRange     '0.5.5',
+274 silly addNameRange     '0.5.6',
+274 silly addNameRange     '0.5.8',
+274 silly addNameRange     '0.5.9',
+274 silly addNameRange     '0.5.10',
+274 silly addNameRange     '0.5.11',
+274 silly addNameRange     '0.5.12',
+274 silly addNameRange     '0.5.13',
+274 silly addNameRange     '0.6.0',
+274 silly addNameRange     '0.6.1',
+274 silly addNameRange     '0.6.2',
+274 silly addNameRange     '0.6.3',
+274 silly addNameRange     '0.6.4',
+274 silly addNameRange     '0.7.0',
+274 silly addNameRange     '0.8.0',
+274 silly addNameRange     '0.8.1',
+274 silly addNameRange     '0.9.0-rc1',
+274 silly addNameRange     '0.9.0-rc2' ] ]
+275 verbose addNamed [ 'vows', '0.8.1' ]
+276 verbose addNamed [ '0.8.1', '0.8.1' ]
+277 silly lockFile 3578baa8-vows-0-8-1 vows@0.8.1
+278 verbose lock vows@0.8.1 /Users/anil/.npm/3578baa8-vows-0-8-1.lock
+279 silly lockFile dadb772d-ry-npmjs-org-vows-vows-0-8-1-tgz https://registry.npmjs.org/vows/-/vows-0.8.1.tgz
+280 verbose lock https://registry.npmjs.org/vows/-/vows-0.8.1.tgz /Users/anil/.npm/dadb772d-ry-npmjs-org-vows-vows-0-8-1-tgz.lock
+281 verbose addRemoteTarball [ 'https://registry.npmjs.org/vows/-/vows-0.8.1.tgz',
+281 verbose addRemoteTarball   'e09e988ce594ca05a08d72abcca34e88db559131' ]
+282 info retry fetch attempt 1 at 16:56:24
+283 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/vows/-/vows-0.8.1.tgz
+284 http GET https://registry.npmjs.org/vows/-/vows-0.8.1.tgz
+285 http 200 https://registry.npmjs.org/topojson
+286 silly registry.get cb [ 200,
+286 silly registry.get   { date: 'Sat, 14 Mar 2015 20:56:24 GMT',
+286 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+286 silly registry.get     etag: '"B2SGZKH05WD8BLQ5QB2RTW911"',
+286 silly registry.get     'content-type': 'application/json',
+286 silly registry.get     'cache-control': 'max-age=60',
+286 silly registry.get     'content-length': '85782',
+286 silly registry.get     'accept-ranges': 'bytes',
+286 silly registry.get     via: '1.1 varnish',
+286 silly registry.get     age: '0',
+286 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+286 silly registry.get     'x-cache': 'MISS',
+286 silly registry.get     'x-cache-hits': '0',
+286 silly registry.get     'x-timer': 'S1426366584.528400,VS0,VE346',
+286 silly registry.get     vary: 'Accept',
+286 silly registry.get     'keep-alive': 'timeout=10, max=49',
+286 silly registry.get     connection: 'Keep-Alive' } ]
+287 silly addNameRange number 2 { name: 'topojson', range: '>=1.6.18-0 <2.0.0-0', hasData: true }
+288 silly addNameRange versions [ 'topojson',
+288 silly addNameRange   [ '0.0.1',
+288 silly addNameRange     '0.0.2',
+288 silly addNameRange     '0.0.4',
+288 silly addNameRange     '0.0.5',
+288 silly addNameRange     '0.0.6',
+288 silly addNameRange     '0.0.7',
+288 silly addNameRange     '0.0.8',
+288 silly addNameRange     '0.0.9',
+288 silly addNameRange     '0.0.10',
+288 silly addNameRange     '0.0.11',
+288 silly addNameRange     '0.0.12',
+288 silly addNameRange     '0.0.13',
+288 silly addNameRange     '0.0.14',
+288 silly addNameRange     '0.0.15',
+288 silly addNameRange     '0.0.16',
+288 silly addNameRange     '0.0.17',
+288 silly addNameRange     '0.0.18',
+288 silly addNameRange     '0.0.19',
+288 silly addNameRange     '0.0.20',
+288 silly addNameRange     '0.0.21',
+288 silly addNameRange     '0.0.23',
+288 silly addNameRange     '0.0.24',
+288 silly addNameRange     '0.0.25',
+288 silly addNameRange     '0.0.26',
+288 silly addNameRange     '0.0.27',
+288 silly addNameRange     '0.0.28',
+288 silly addNameRange     '0.0.29',
+288 silly addNameRange     '0.0.30',
+288 silly addNameRange     '0.0.31',
+288 silly addNameRange     '0.0.32',
+288 silly addNameRange     '0.0.33',
+288 silly addNameRange     '0.0.34',
+288 silly addNameRange     '0.0.35',
+288 silly addNameRange     '0.0.36',
+288 silly addNameRange     '0.0.37',
+288 silly addNameRange     '0.0.38',
+288 silly addNameRange     '0.0.39',
+288 silly addNameRange     '1.0.0',
+288 silly addNameRange     '1.1.0',
+288 silly addNameRange     '1.1.1',
+288 silly addNameRange     '1.1.2',
+288 silly addNameRange     '1.1.3',
+288 silly addNameRange     '1.1.4',
+288 silly addNameRange     '1.1.5',
+288 silly addNameRange     '1.1.6',
+288 silly addNameRange     '1.2.0',
+288 silly addNameRange     '1.2.1',
+288 silly addNameRange     '1.2.2',
+288 silly addNameRange     '1.2.3',
+288 silly addNameRange     '1.3.0',
+288 silly addNameRange     '1.4.0',
+288 silly addNameRange     '1.4.1',
+288 silly addNameRange     '1.4.2',
+288 silly addNameRange     '1.4.3',
+288 silly addNameRange     '1.4.4',
+288 silly addNameRange     '1.4.5',
+288 silly addNameRange     '1.4.6',
+288 silly addNameRange     '1.4.7',
+288 silly addNameRange     '1.4.8',
+288 silly addNameRange     '1.4.9',
+288 silly addNameRange     '1.5.0',
+288 silly addNameRange     '1.5.1',
+288 silly addNameRange     '1.5.2',
+288 silly addNameRange     '1.5.3',
+288 silly addNameRange     '1.5.4',
+288 silly addNameRange     '1.6.0',
+288 silly addNameRange     '1.6.1',
+288 silly addNameRange     '1.6.2',
+288 silly addNameRange     '1.6.3',
+288 silly addNameRange     '1.6.4',
+288 silly addNameRange     '1.6.5',
+288 silly addNameRange     '1.6.6',
+288 silly addNameRange     '1.6.7',
+288 silly addNameRange     '1.6.8',
+288 silly addNameRange     '1.6.9',
+288 silly addNameRange     '1.6.10',
+288 silly addNameRange     '1.6.11',
+288 silly addNameRange     '1.6.12',
+288 silly addNameRange     '1.6.13',
+288 silly addNameRange     '1.6.14',
+288 silly addNameRange     '1.6.15',
+288 silly addNameRange     '1.6.16',
+288 silly addNameRange     '1.6.17',
+288 silly addNameRange     '1.6.18' ] ]
+289 verbose addNamed [ 'topojson', '1.6.18' ]
+290 verbose addNamed [ '1.6.18', '1.6.18' ]
+291 silly lockFile 6242d4b4-topojson-1-6-18 topojson@1.6.18
+292 verbose lock topojson@1.6.18 /Users/anil/.npm/6242d4b4-topojson-1-6-18.lock
+293 silly lockFile f7eccd83-org-topojson-topojson-1-6-18-tgz https://registry.npmjs.org/topojson/-/topojson-1.6.18.tgz
+294 verbose lock https://registry.npmjs.org/topojson/-/topojson-1.6.18.tgz /Users/anil/.npm/f7eccd83-org-topojson-topojson-1-6-18-tgz.lock
+295 http 200 https://registry.npmjs.org/vows/-/vows-0.8.1.tgz
+296 verbose addRemoteTarball [ 'https://registry.npmjs.org/topojson/-/topojson-1.6.18.tgz',
+296 verbose addRemoteTarball   '23f4284a605aaf813d22d7a825903f0d8757007a' ]
+297 info retry fetch attempt 1 at 16:56:24
+298 verbose fetch to= /var/folders/l7/_brgmpg12yxb3djgf1yh4xjm0000gp/T/npm-970-V_xQ51ED/registry.npmjs.org/topojson/-/topojson-1.6.18.tgz
+299 http GET https://registry.npmjs.org/topojson/-/topojson-1.6.18.tgz
+300 silly lockFile dadb772d-ry-npmjs-org-vows-vows-0-8-1-tgz https://registry.npmjs.org/vows/-/vows-0.8.1.tgz
+301 silly lockFile dadb772d-ry-npmjs-org-vows-vows-0-8-1-tgz https://registry.npmjs.org/vows/-/vows-0.8.1.tgz
+302 silly lockFile 3578baa8-vows-0-8-1 vows@0.8.1
+303 silly lockFile 3578baa8-vows-0-8-1 vows@0.8.1
+304 silly lockFile 2ff51747-vows-0-8-1 vows@^0.8.1
+305 silly lockFile 2ff51747-vows-0-8-1 vows@^0.8.1
+306 http 200 https://registry.npmjs.org/topojson/-/topojson-1.6.18.tgz
+307 silly lockFile f7eccd83-org-topojson-topojson-1-6-18-tgz https://registry.npmjs.org/topojson/-/topojson-1.6.18.tgz
+308 silly lockFile f7eccd83-org-topojson-topojson-1-6-18-tgz https://registry.npmjs.org/topojson/-/topojson-1.6.18.tgz
+309 silly lockFile 6242d4b4-topojson-1-6-18 topojson@1.6.18
+310 silly lockFile 6242d4b4-topojson-1-6-18 topojson@1.6.18
+311 silly lockFile 083adde4-topojson-1-6-18 topojson@^1.6.18
+312 silly lockFile 083adde4-topojson-1-6-18 topojson@^1.6.18
+313 http 200 https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz
+314 silly lockFile 65643b1c-ion-d3-geo-projection-0-2-13-tgz https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz
+315 silly lockFile 65643b1c-ion-d3-geo-projection-0-2-13-tgz https://registry.npmjs.org/d3-geo-projection/-/d3-geo-projection-0.2.13.tgz
+316 silly lockFile 92eaca93-d3-geo-projection-0-2-13 d3-geo-projection@0.2.13
+317 silly lockFile 92eaca93-d3-geo-projection-0-2-13 d3-geo-projection@0.2.13
+318 silly lockFile ae1e7592-d3-geo-projection-0-2-13 d3-geo-projection@^0.2.13
+319 silly lockFile ae1e7592-d3-geo-projection-0-2-13 d3-geo-projection@^0.2.13
+320 error Error: EACCES, mkdir '/Users/anil/.npm/request/2.53.0'
+320 error  { [Error: EACCES, mkdir '/Users/anil/.npm/request/2.53.0']
+320 error   errno: 3,
+320 error   code: 'EACCES',
+320 error   path: '/Users/anil/.npm/request/2.53.0',
+320 error   parent: 'vega' }
+321 error Please try running this command again as root/Administrator.
+322 error System Darwin 14.1.0
+323 error command "node" "/usr/local/bin/npm" "install"
+324 error cwd /Volumes/EXT/Documents/Github/vega
+325 error node -v v0.10.32
+326 error npm -v 1.4.28
+327 error path /Users/anil/.npm/request/2.53.0
+328 error code EACCES
+329 error errno 3
+330 error stack Error: EACCES, mkdir '/Users/anil/.npm/request/2.53.0'
+331 verbose exit [ 3, true ]
