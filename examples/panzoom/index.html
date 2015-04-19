@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Vega Interaction Test</title/>
+    <script src="../lib/d3.v3.min.js"></script>
+    <script src="../../vega.js"></script>
+    <style>
+        * { font-family: Helvetica Neue, Arial, sans-serif; font-size: 16px; }
+        body {
+            width: 880px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p><strong>Vega Pan/Zoom Test</strong></p>
+    <div id="view" class="view"></div>
+    <p>This example shows how to add custom zoom listeners
+    to a Vega view.</p>
+    <p>Disclaimer: Not intended as an example of "good" design!</p>
+</body>
+
+<script type="text/javascript">
+var spec = 
+    {
+  "width": 800,
+  "height": 500,
+  "padding": {"left": 45, "right": 65, "top": 50, "bottom": 50},
+
+  "data": [
+    {
+      "name": "points",
+      "url": "../data/points.json"
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "range": "width", "zero": false,
+      "domainMin": -1.6,
+      "domainMax": 1.6
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "range": "height", "zero": false,
+      "domainMin": -1,
+      "domainMax": 1
+    }
+  ],
+  "axes": [
+    {"type": "x", "scale": "x", "grid": true, "layer": "back", "properties": {
+      "labels": {
+        "fontSize": {"value": 14}
+      }
+
+    }},
+    {"type": "y", "scale": "y", "grid": true, "layer": "back", "properties": {
+      "labels": {
+        "fontSize": {"value": 14}
+      }
+
+    }}
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "properties": {
+        "enter": {
+          "x": {"value": 0},
+          "width": {"value": 800},
+          "y": {"value": 0},
+          "height": {"value": 500},
+          "clip": {"value": true}
+        }
+      },
+      "marks": [
+        {
+          "type": "symbol",
+          "from": {"data": "points"},
+          "properties": {
+            "update": {
+              "x": {"scale": "x", "field": "data.x"},
+              "y": {"scale": "y", "field": "data.y"},
+              "fill": {"value": "steelblue"},
+              "size": {"value": 60}
+            },
+            "hover": {
+              "fill": {"value": "red"},
+              "size": {"value": 100}
+            }
+          }
+        }
+      ]
+    }
+  ]
+};
+
+
+vg.parse.spec(spec, function(chart) {
+    var view = chart({el:"#view"})
+                .update();
+    
+    
+    var zoom = d3.behavior.zoom()
+        .on("zoom", function() {
+            view.update({props:"update"});
+        })
+        .scaleExtent([1, Infinity]);
+
+    var scales = view.model().scene().items[0].scales;
+    if ('x' in scales) {
+        zoom.x(scales['x']);
+    }
+    if ('y' in scales) {
+        zoom.y(scales['y']);
+    }
+
+    var canvas = d3.select("#view canvas");
+    canvas.call(zoom);
+
+});
+</script>
+</html>
