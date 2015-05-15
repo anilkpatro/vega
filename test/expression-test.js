@@ -381,14 +381,11 @@ suite.addBatch({
           assert.equal(d.getUTCDate(), evaluate('utcdate(datetime(2001,1,'+date+'))'));
         }
       },
-<<<<<<< HEAD
-=======
       'should eval array functions': function(evaluate) {
         assert.equal([1,2,3].length, evaluate('length([1,2,3])'));
         assert.equal([1,2,3,2,1].indexOf("2"), evaluate('indexof([1,2,3,2,1], "2")'));
         assert.equal([1,2,3,2,1].lastIndexOf("2"), evaluate('lastindexof([1,2,3,2,1], "2")'));
       },
->>>>>>> trifacta/v1.5.1
       'should not eval undefined functions': function(evaluate) {
         assert.throws(evaluate.fn('Array()'));
         assert.throws(evaluate.fn('Function()'));
