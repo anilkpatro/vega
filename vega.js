@@ -21,7 +21,7 @@ function (d3, topojson) {
 //---------------------------------------------------
 
   var vg = {
-    version:  "1.5.0", // semantic versioning
+    version:  "1.5.1", // semantic versioning
     d3:       d3,      // stash d3 for use in property functions
     topojson: topojson // stash topojson similarly
   };
@@ -4694,12 +4694,20 @@ vg.expression.code = function(opt) {
         return fncall("getUTCMilliseconds", args, DATE, 0);
       },
 
-    // STRING functions
-    "parseFloat": "parseFloat",
-    "parseInt": "parseInt",
+    // shared sequence functions
     "length": function(args) {
         return fncall("length", args, null, -1);
       },
+    "indexof": function(args) {
+        return fncall("indexOf", args, null);
+      },
+    "lastindexof": function(args) {
+        return fncall("lastIndexOf", args, null);
+      },
+
+    // STRING functions
+    "parseFloat": "parseFloat",
+    "parseInt": "parseInt",
     "upper": function(args) {
         return fncall("toUpperCase", args, STRING, 0);
       },
@@ -6186,6 +6194,9 @@ var vg_expression_parser = (function() {
           this.value = token.value;
           this.raw = source.slice(token.start, token.end);
           if (token.regex) {
+              if (this.raw == '//') {
+                this.raw = '/(?:)/';
+              }
               this.regex = token.regex;
           }
           this.finish();
@@ -7194,7 +7205,8 @@ var vg_expression_parser = (function() {
     parse: parse
   };
 
-})();vg.parse = {};vg.parse.axes = (function() {
+})();
+vg.parse = {};vg.parse.axes = (function() {
   var ORIENT = {
     "x":      "bottom",
     "y":      "left",
